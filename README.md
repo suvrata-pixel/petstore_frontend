@@ -1,3 +1,37 @@
+🐾 PetStore Frontend
+A modern and responsive pet care e-commerce web application built using **React + Vite** and **Bootstrap 5**.  
+PetStore helps pet parents shop for products, book services, and contribute to community initiatives like rescue and care for stray animals.
+
+
+Features
+Homepage Sections
+1. **Navbar** – Responsive navigation bar with logo and menu links (Products, Services, Cart, Login, Contact).  
+2. **Hero Section** – Eye-catching header image with site name and short description.  
+3. **Products & Services** – Rounded image cards for “For Cats”, “For Dogs”, “Grooming & Spa”, “Pet Parents”, and “Medical Services”.  
+4. **Featured Deals** – Scrollable carousel displaying promotional offers.  
+5. **Rescue & Care** – Section highlighting community donations and rescue missions.  
+6. **Testimonials** – Customer reviews with profile images.  
+7. **Footer** – Social media links and informative site links in three columns.
+
+
+Tech Stack
+| Category | Technology |
+|-----------|-------------|
+| Frontend | React (with Vite) |
+| Styling | Bootstrap 5, Custom CSS |
+| Icons | Bootstrap Icons |
+| Version Control | Git & GitHub |
+
+
+
+
+
+
+
+
+
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
