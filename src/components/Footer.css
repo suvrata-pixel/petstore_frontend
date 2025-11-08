@@ -1,0 +1,33 @@
+/* Footer link styles */
+.footer-links a {
+    color: #dcdcdc;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: rgb(141, 104, 48);
+    transform: translateX(3px);
+  }
+  
+  /* Social icon hover effect */
+  .social-link {
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .social-link:hover {
+    color: rgb(141, 104, 48);
+    transform: scale(1.2);
+  }
+  .footer a {
+    color: #ffffff; /* white or any neutral text color */
+    text-decoration: none; /* remove underline */
+    transition: color 0.3s ease;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+  }
+  
+  .footer a:hover {
+    color: rgb(141, 104, 48); /* the same golden brown you used for headings */
+  }
+    

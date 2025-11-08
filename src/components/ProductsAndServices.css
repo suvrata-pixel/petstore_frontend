@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+
+
+.product-item {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .product-item:hover {
+    transform: translateY(-8px);
+  }
+  
+  .product-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .product-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+ .prdct-serv
+ {
+    color: rgb(141, 104, 48);
+    font-family: "Caveat Brush", cursive;
+ }  
