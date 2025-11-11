@@ -1,14 +1,18 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import tph2 from "../assets/tph2.svg"; // your logo
 
 
 const Navbar = () => {
+
+  //const navLinkClassName = "nav-link text-uppercase";
+
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
       <div className="container">
         {/* Brand / Logo */}
-        <a className="navbar-brand d-flex align-items-center" href="#">
+        <Link className="navbar-brand d-flex align-items-center" to="/">
           <img
             src={tph2}
             alt="PetStore Logo"
@@ -17,7 +21,7 @@ const Navbar = () => {
             className="me-3 rounded-circle"
           />
           <span className="my-logo-text fw-bold"> The Purr-chase Hub </span>
-        </a>
+        </Link>
 
         {/* Toggler button (for mobile) */}
         <button
@@ -36,14 +40,14 @@ const Navbar = () => {
         <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link active" href="#">
+              <Link className='nav-link active' to="/">
                 Home
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link className="nav-link" to="/products-services-hub">
                 Products and Services
-              </a>
+              </Link>
             </li>
             {/*<li className="nav-item">
               <a className="nav-link" href="#">
@@ -51,19 +55,19 @@ const Navbar = () => {
               </a>
             </li>*/}
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link className="nav-link" to="/cart">
                 Cart
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link className="nav-link" to="/login">
                 Login
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link className="nav-link" to="/contact">
                 Contact Us
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

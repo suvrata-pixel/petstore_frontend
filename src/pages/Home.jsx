@@ -4,7 +4,6 @@ import ProductsAndServices from "../components/ProductsAndServices";
 import FeaturedDeals from "../components/FeaturedDeals";
 import RescueAndCare from "../components/RescueAndCare";
 import Testimonials from "../components/Testimonials";
-import Footer from "../components/Footer";
 
 
 const Home = () => {
@@ -15,7 +14,7 @@ const Home = () => {
       <FeaturedDeals />
       <RescueAndCare />
       <Testimonials />
-      <Footer />
+      
     </div>
   );
 };
