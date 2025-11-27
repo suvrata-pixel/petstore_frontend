@@ -82,3 +82,11 @@ button {
         box-shadow: 0 6px 14px rgba(123, 47, 247, 0.6);
         background: linear-gradient(135deg, #d4a1c3, #ae9acf);
     }
+
+    .hover-shadow {
+      transition: all 0.3s ease;
+    }
+    .hover-shadow:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.15) !important;
+    }

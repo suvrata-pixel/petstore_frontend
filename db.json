@@ -1,6 +1,98 @@
 {
-    "users": [],
-    "products": [],
-    "orders": []
-  }
-  
+  "users": [
+    {
+      "id": "1",
+      "email": "admin@petshop.com",
+      "password": "adminpass",
+      "role": "admin",
+      "isActive": true
+    },
+    {
+      "id": "2",
+      "email": "user@petshop.com",
+      "password": "userpass",
+      "role": "user",
+      "isActive": true
+    },
+    {
+      "id": "af57",
+      "email": "suvrataga4@gmail.com",
+      "password": "123456789abc",
+      "role": "user",
+      "isActive": true
+    },
+    {
+      "id": "cf4a",
+      "email": "suvrataga@gmail.com",
+      "password": "12345678",
+      "role": "user",
+      "isActive": true
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Salmon & Whitefish Paté (Premium Cat Food)",
+      "description": "Grain-free, high-protein wet food for adult cats. Supports healthy digestion and shiny coat.",
+      "price": 450,
+      "image": "catfood",
+      "category": "Cat",
+      "isActive": true
+    },
+    {
+      "id": "2",
+      "name": "Free-Range Chicken Dry Food (Dog)",
+      "description": "Hypoallergenic kibble with ancient grains. Ideal for sensitive stomachs.",
+      "price": 350,
+      "image": "dogfood",
+      "category": "Dog",
+      "isActive": true
+    },
+    {
+      "id": "3",
+      "name": "Organic Dental Chews (Dog Treat)",
+      "description": "All-natural dental chews to promote oral health and fresh breath.",
+      "price": 80,
+      "image": "dogtreat",
+      "category": "Dog",
+      "isActive": true
+    },
+    {
+      "id": "4",
+      "name": "Royal Canin Puppy Food 4kg",
+      "price": 3200,
+      "category": "Dog",
+      "description": "Complete food for growing puppies",
+      "image": "https://via.placeholder.com/300x300/f8d7da/333?text=Dog+Food",
+      "isActive": true
+    },
+    {
+      "id": "5",
+      "name": "Whiskas Adult Cat Food 3kg",
+      "price": 1850,
+      "category": "Cat",
+      "description": "Tuna flavor for adult cats",
+      "image": "https://via.placeholder.com/300x300/e8f5e8/333?text=Cat+Food",
+      "isActive": true
+    },
+    {
+      "id": "6",
+      "name": "Pedigree Chicken Dog Treats",
+      "price": 450,
+      "category": "Dog",
+      "description": "Delicious training treats",
+      "image": "https://via.placeholder.com/300x300/fff3cd/333?text=Dog+Treats",
+      "isActive": true
+    },
+    {
+      "id": "7",
+      "name": "Catnip Toy Ball",
+      "price": 299,
+      "category": "Cat",
+      "description": "100% organic catnip filled",
+      "image": "https://via.placeholder.com/300x300/d1c4e9/333?text=Cat+Toy",
+      "isActive": true
+    }
+  ],
+  "orders": []
+}
