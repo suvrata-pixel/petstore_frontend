@@ -63,7 +63,7 @@
       "price": 3200,
       "category": "Dog",
       "description": "Complete food for growing puppies",
-      "image": "https://via.placeholder.com/300x300/f8d7da/333?text=Dog+Food",
+      "image": "royalcanine",
       "isActive": true
     },
     {
@@ -72,7 +72,7 @@
       "price": 1850,
       "category": "Cat",
       "description": "Tuna flavor for adult cats",
-      "image": "https://via.placeholder.com/300x300/e8f5e8/333?text=Cat+Food",
+      "image": "whiskas",
       "isActive": true
     },
     {
@@ -81,7 +81,7 @@
       "price": 450,
       "category": "Dog",
       "description": "Delicious training treats",
-      "image": "https://via.placeholder.com/300x300/fff3cd/333?text=Dog+Treats",
+      "image": "pedigree",
       "isActive": true
     },
     {
@@ -90,7 +90,7 @@
       "price": 299,
       "category": "Cat",
       "description": "100% organic catnip filled",
-      "image": "https://via.placeholder.com/300x300/d1c4e9/333?text=Cat+Toy",
+      "image": "catnip",
       "isActive": true
     }
   ],

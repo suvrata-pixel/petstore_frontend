@@ -5,6 +5,14 @@ import { useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 import { useCart } from "../context/CartContext";
 
+import catfood from "../assets/cat_food1.png";
+import dogfood from "../assets/dog_food1.png";
+import dogtreat from "../assets/dog_treat1.png";
+import royalcanine from "../assets/royalcanine.png";
+import whiskas from "../assets/whiskas.png";
+import pedigree from "../assets/pedigree.png";
+import catnip from "../assets/catnip.png";
+
 const Products = () => {
   const [products, setProducts] = useState([]);
   const [filtered, setFiltered] = useState([]);
@@ -106,12 +114,26 @@ const Products = () => {
           filtered.map((product) => (
             <div key={product.id} className="col-md-6 col-lg-4">
               <div className="card h-100 shadow-sm border-0 hover-shadow">
-                <img
-                  src={product.image}
-                  className="card-img-top"
-                  alt={product.name}
-                  style={{ height: "250px", objectFit: "cover" }}
-                />
+                
+
+              <img
+                src={
+                // If image is one of our imported assets → use it
+                product.image === "catfood" ? catfood :
+                product.image === "dogfood" ? dogfood :
+                product.image === "dogtreat" ? dogtreat :
+                product.image === "royalcanine" ? royalcanine :
+                product.image === "whiskas" ? whiskas :
+                product.image === "pedigree" ? pedigree :
+                product.image === "catnip" ? catnip :
+                // Otherwise try as URL, fallback to placeholder
+                product.image || "https://via.placeholder.com/300x250/f8d7da/333?text=No+Image"
+                }
+                className="card-img-top"
+                alt={product.name}
+                style={{ height: "250px", objectFit: "cover" }}
+              />
+
                 <div className="card-body d-flex flex-column">
                   <h5 className="card-title">{product.name}</h5>
                   <p className="text-muted small">{product.category} • {product.description}</p>
