@@ -34,8 +34,14 @@ const App = () => {
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="/contact" element={<ContactUs />} />
-            <Route path="/admin" element={
-              <ProtectedRoute adminOnly> <AdminDashboard /> </ProtectedRoute>} />
+            <Route
+              path="/admin"
+              element={
+                <ProtectedRoute adminOnly>
+                  <AdminDashboard />
+                </ProtectedRoute>
+              }
+            />
             <Route path="*" element={<h1 style={{ textAlign: "center", padding: "100px" }}>404</h1>} />
           </Routes>
         {/*</div>*/}

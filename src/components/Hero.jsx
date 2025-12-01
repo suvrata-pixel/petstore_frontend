@@ -9,7 +9,7 @@ const Hero = () => {
         <div className="row">
           <div className="col-md-6">
             <h1 className="display-4 fw-bold"> Every Purr-chase is a Pawsitive choice 🐾 </h1>
-            <p className="custom_tag1 lead mt-3">
+            <p className="custom_tag1 lead mb-5">
               Premium food, grooming, and medical care — everything your furry
               friend deserves, all in one place.
             </p>

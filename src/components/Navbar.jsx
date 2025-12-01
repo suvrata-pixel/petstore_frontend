@@ -77,48 +77,48 @@ const Navbar = () => {
               </Link>
             </li>
 
-            <li className="nav-item">
+            {/*<li className="nav-item">
               <Link className="nav-link" to="/contact">Contact Us</Link>
-            </li>
+            </li>*/}
 
             {/* USER LOGGED IN */}
             {user ? (
-              <li className="nav-item dropdown">
-                <a
-                  className="nav-link dropdown-toggle d-flex align-items-center"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  style={{ color: '#4D805A', fontWeight: '600' }}
-                >
-                  Hi, {user.username.split("@")[0]}!
-                </a>
-                <ul className="dropdown-menu dropdown-menu-end shadow">
-                  {isAdmin && (
-                    <li>
-                      <Link className="dropdown-item" to="/admin">
-                        Admin Dashboard
-                      </Link>
-                    </li>
-                  )}
-                  <li>
-                    <button
-                      className="dropdown-item text-danger"
-                      onClick={handleLogout}
-                    >
-                      Logout
-                    </button>
-                  </li>
-                </ul>
-              </li>
-            ) : (
-              /* USER NOT LOGGED IN */
-              <li className="nav-item">
-                <Link to="/login">
-                  <button className="custom-btn ms-3">Login</button>
-                </Link>
-              </li>
-            )}
+  <li className="nav-item dropdown">
+    <a
+      className="nav-link dropdown-toggle d-flex align-items-center"
+      href="#"
+      role="button"
+      data-bs-toggle="dropdown"
+      style={{ color: "#4D805A", fontWeight: "600" }}
+    >
+      Hi, {user?.email ? user.email.split("@")[0] : "User"}!
+    </a>
+    <ul className="dropdown-menu dropdown-menu-end shadow">
+      {isAdmin && (
+        <li>
+          <Link className="dropdown-item" to="/admin">
+            Admin Dashboard
+          </Link>
+        </li>
+      )}
+      <li>
+        <button
+          className="dropdown-item text-danger"
+          onClick={handleLogout}
+        >
+          Logout
+        </button>
+      </li>
+    </ul>
+  </li>
+) : (
+  /* NOT LOGGED IN */
+  <li className="nav-item">
+    <Link to="/login">
+      <button className="custom-btn">Login</button>
+    </Link>
+  </li>
+)}
           </ul>
         </div>
       </div>

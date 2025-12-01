@@ -18,12 +18,8 @@ const AdminDashboard = () => {
   const [editingId, setEditingId] = useState(null);
 
   useEffect(() => {
-    if (!user || user.role !== "admin") {
-      navigate("/");
-      return;
-    }
     fetchData();
-  }, [user, navigate]);
+  }, []);
 
   const fetchData = () => {
     Promise.all([
