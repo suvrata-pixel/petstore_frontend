@@ -1,26 +1,31 @@
 import React from "react";
 import "./ProductsAndServices.css";
+import cats3 from "../assets/cats3.jpg";
+import puppy1 from "../assets/puppy1.jpg";
+import petParent from "../assets/petParent.jpg";
+import grooming from "../assets/grooming.jpg";
+import med from "../assets/med.jpg";
 
 const products = [
   {
     name: "For Cats",
-    img: "/src/assets/cats3.jpg",
+    img: cats3,
   },
   {
     name: "For Dogs",
-    img: "/src/assets/puppy1.jpg",
+    img: puppy1,
   },
   {
     name: "Pet Parents",
-    img: "/src/assets/petParent.jpg",
+    img: petParent,
   },
   {
     name: "Grooming & Spa",
-    img: "/src/assets/grooming.jpg",
+    img: grooming,
   },
   {
     name: "Medical Service",
-    img: "/src/assets/med.jpg",
+    img: med.,
   },
 ];
 
