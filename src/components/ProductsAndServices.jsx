@@ -22,6 +22,7 @@ const ProductsAndServices = () => {
                   src={item.img}
                   alt={item.name}
                   className="img-fluid rounded-circle product-img"
+                  style={{ objectFit: "cover", width: "140px", height: "140px" }}
                 />
                 <p className="mt-2 fw-semibold">{item.name}</p>
               </div>
