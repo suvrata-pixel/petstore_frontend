@@ -1,12 +1,19 @@
 import React from "react";
 import "./ProductsAndServices.css";
 
+// IMPORT FROM src/assets — this method NEVER fails on Vercel
+import cats3 from "../assets/cats3.jpg";
+import puppy1 from "../assets/puppy1.jpg";
+import petParent from "../assets/petParent.jpg";
+import grooming from "../assets/grooming.jpg";
+import med from "../assets/med.jpg";
+
 const products = [
-  { name: "For Cats",        img: "/cats3.jpg" },
-  { name: "For Dogs",       img: "/puppy1.jpg" },
-  { name: "Pet Parents",    img: "/petParent.jpg" },
-  { name: "Grooming & Spa", img: "/grooming.jpg" },
-  { name: "Medical Service",img: "/med.jpg" },
+  { name: "For Cats",        img: cats3 },
+  { name: "For Dogs",       img: puppy1 },
+  { name: "Pet Parents",    img: petParent },
+  { name: "Grooming & Spa", img: grooming },
+  { name: "Medical Service",img: med },
 ];
 
 const ProductsAndServices = () => {
@@ -22,7 +29,7 @@ const ProductsAndServices = () => {
                   src={item.img}
                   alt={item.name}
                   className="img-fluid rounded-circle product-img"
-                  style={{ objectFit: "cover", width: "140px", height: "140px" }}
+                  style={{ width: "140px", height: "140px", objectFit: "cover" }}
                 />
                 <p className="mt-2 fw-semibold">{item.name}</p>
               </div>
