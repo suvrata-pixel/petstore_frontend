@@ -1,7 +1,6 @@
 import React from "react";
 import "./ProductsAndServices.css";
 
-// IMPORT FROM src/assets — this method NEVER fails on Vercel
 import cats3 from "../assets/cats3.jpg";
 import puppy1 from "../assets/puppy1.jpg";
 import petParent from "../assets/petParent.jpg";
