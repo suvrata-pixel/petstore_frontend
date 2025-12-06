@@ -35,7 +35,7 @@
       "name": "Salmon & Whitefish Paté (Premium Cat Food)",
       "description": "Grain-free, high-protein wet food for adult cats. Supports healthy digestion and shiny coat.",
       "price": 450,
-      "image": "catfood",
+      "image": "cat_food1.png",
       "category": "Cat",
       "isActive": true
     },
@@ -44,7 +44,7 @@
       "name": "Free-Range Chicken Dry Food (Dog)",
       "description": "Hypoallergenic kibble with ancient grains. Ideal for sensitive stomachs.",
       "price": 350,
-      "image": "dogfood",
+      "image": "dog_food1.png",
       "category": "Dog",
       "isActive": true
     },
@@ -53,7 +53,7 @@
       "name": "Organic Dental Chews (Dog Treat)",
       "description": "All-natural dental chews to promote oral health and fresh breath.",
       "price": 80,
-      "image": "dogtreat",
+      "image": "/dog_treat1.png",
       "category": "Dog",
       "isActive": true
     },
@@ -63,7 +63,7 @@
       "price": 3200,
       "category": "Dog",
       "description": "Complete food for growing puppies",
-      "image": "royalcanine",
+      "image": "/royalcanine.png",
       "isActive": true
     },
     {
@@ -72,7 +72,7 @@
       "price": 1850,
       "category": "Cat",
       "description": "Tuna flavor for adult cats",
-      "image": "whiskas",
+      "image": "/whiskas.png",
       "isActive": true
     },
     {
@@ -81,7 +81,7 @@
       "price": 450,
       "category": "Dog",
       "description": "Delicious training treats",
-      "image": "pedigree",
+      "image": "/pedigree.png",
       "isActive": true
     },
     {
@@ -90,7 +90,34 @@
       "price": 299,
       "category": "Cat",
       "description": "100% organic catnip filled",
-      "image": "catnip",
+      "image": "/catnip.png",
+      "isActive": true
+    },
+    {
+      "id": 1764928382923,
+      "name": "cat shampoo",
+      "price": "400",
+      "category": "Cat",
+      "description": "shampoo",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK1065sbwI2xsSy9240asqoRXe4doL3xnPEQ&s",
+      "isActive": true
+    },
+    {
+      "id": 1764928823429,
+      "name": "cat toys",
+      "price": "200",
+      "category": "Cat",
+      "description": "cat toys",
+      "image": "https://drive.google.com/file/d/16Qpi8aaJecBcTd_AEcyrbj9yaR-yUsct/view?usp=sharing",
+      "isActive": true
+    },
+    {
+      "id": 1764929072704,
+      "name": "cat2",
+      "price": "500",
+      "category": "Cat",
+      "description": "cat2",
+      "image": "https://i.ibb.co/xyrgV7Y/persiancat.jpg",
       "isActive": true
     }
   ],
