@@ -1,5 +1,6 @@
 import React from "react";
-import "./Hero.css"; // we'll add custom styles here
+import "./Hero.css"; 
+import { Link } from "react-router-dom";
 
 
 const Hero = () => {
@@ -13,7 +14,9 @@ const Hero = () => {
               Premium food, grooming, and medical care — everything your furry
               friend deserves, all in one place.
             </p>
-            <button className="btn custom-btn btn-lg mt-4">Shop Now</button>
+            <Link to="/products" className="btn custom-btn btn-lg mt-4">
+              Shop Now
+            </Link>
           </div>
         </div>
       </div>
