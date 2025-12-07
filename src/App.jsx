@@ -13,6 +13,7 @@ import Register from "./pages/Register";
 import ProductDetails from "./pages/ProductDetails";
 import AdminDashboard from "./pages/AdminDashboard";
 import ProtectedRoute from "./components/ProtectedRoute";
+import CheckoutSuccess from "./pages/CheckoutSuccess";
 
 import { CartProvider } from "./context/CartContext";
 import { AuthProvider } from "./context/AuthContext";
@@ -33,6 +34,7 @@ const App = () => {
             <Route path="/cart" element={<Cart />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
+            <Route path="/checkout-success" element={<CheckoutSuccess />} />
             <Route path="/contact" element={<ContactUs />} />
             <Route
               path="/admin"

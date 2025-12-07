@@ -139,9 +139,19 @@ const Cart = () => {
                     <span>Total Payable:</span>
                     <span>{rupeeSymbol}{subtotal.toFixed(2)}</span>
                   </div>
-                  <button className="btn custom-btn w-100">
+                  {/*<button className="btn custom-btn w-100">
                     <i className="bi bi-check-circle me-2"></i> Proceed to Checkout
-                  </button>
+                  </button>*/}
+
+                  <Link
+                    to="/checkout-success"
+                    className="btn custom-btn w-100"
+                    style={{ padding: "14px" }}
+                  >
+                  <i className="bi bi-check-circle me-2"></i>
+                  Complete Purchase
+                  </Link>
+
                 </div>
               </div>
             </div>
