@@ -1,32 +1,25 @@
-// src/context/CartContext.jsx
+
 import React, { createContext, useState, useContext, useEffect } from 'react';
 
-// ---------------------------------------------------------------------------------
-// 💡 Learning Point: Local Storage Initialization
-// This function attempts to load the cart data from Local Storage.
-// If data exists, it parses it back into a JavaScript object/array.
-// If not, it returns an empty array to initialize the cart state safely.
+
 const getInitialCart = () => {
   const localData = localStorage.getItem('petShopCart');
   return localData ? JSON.parse(localData) : [];
 };
-// ---------------------------------------------------------------------------------
 
 
-// 1. Create the Context object
+
+
 const CartContext = createContext();
 
-// 2. Create the Provider component
+
 export const CartProvider = ({ children }) => {
-  // Use the initialization function to load data on first render
+ 
   const [cartItems, setCartItems] = useState(getInitialCart);
 
-  // ---------------------------------------------------------------------------------
-  // 💡 Learning Point: useEffect for Persistence (Synchronization)
-  // This hook runs every time 'cartItems' changes.
-  // It saves the new state to Local Storage, ensuring data persistence.
+
   useEffect(() => {
-    // ⚠️ Interview Tip: Local Storage only stores strings, so we must stringify the array.
+  
     localStorage.setItem('petShopCart', JSON.stringify(cartItems));
   }, [cartItems]); // Dependency array: runs when cartItems changes
   // ---------------------------------------------------------------------------------
