@@ -1,4 +1,4 @@
-// src/context/AuthContext.jsx
+
 import React, { createContext, useState, useContext, useEffect } from 'react';
 
 const getInitialUser = () => {
@@ -52,13 +52,13 @@ export const AuthProvider = ({ children }) => {
     setUser(null);
     localStorage.removeItem('petShopUser');
 
-    // Safely clear cart without crashing
+    
     try {
       const cart = (AuthProvider._currentValue || {}).cart || require('./CartContext').useCart();
       if (cart?.clearCart) cart.clearCart();
     } catch (e) { /* ignore */ }
 
-    // Prevent back button
+    
     window.history.pushState(null, '', window.location.href);
     window.onpopstate = () => window.history.pushState(null, '', window.location.href);
   };
