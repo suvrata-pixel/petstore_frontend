@@ -1,0 +1,13 @@
+{
+    "services": [
+      {
+        "type": "web",
+        "name": "petstore-json-server",
+        "env": "node",
+        "buildCommand": "npm install",
+        "startCommand": "npx json-server --watch backend/db.json --port 10000",
+        "plan": "free"
+      }
+    ]
+  }
+  
