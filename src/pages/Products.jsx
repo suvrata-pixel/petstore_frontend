@@ -18,7 +18,7 @@ const Products = () => {
 
   // Fetch products from json-server
   useEffect(() => {
-    fetch("http://localhost:4000/products?isActive=true")
+    fetch("https://purrchasehub-backend.onrender.com/products?isActive=true")
       .then((res) => res.json())
       .then((data) => {
         setProducts(data);
