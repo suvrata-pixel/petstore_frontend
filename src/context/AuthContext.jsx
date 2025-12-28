@@ -23,7 +23,7 @@ export const AuthProvider = ({ children }) => {
     setLoading(true);
     try {
       const res = await fetch(
-        `http://localhost:4000/users?email=${email}&password=${password}&isActive=true`
+        `/users?email=${email}&password=${password}&isActive=true`
       );
       const users = await res.json();
 
