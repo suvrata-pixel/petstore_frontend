@@ -18,7 +18,7 @@ const Register = () => {
 
     try {
       // 1. Check if user already exists
-      const checkRes = await fetch(`http://localhost:4000/users?email=${email}`);
+      const checkRes = await fetch(`https://purrchasehub-backend.onrender.com/users?email=${email}`);
       const existing = await checkRes.json();
 
       if (existing.length > 0) {
