@@ -23,7 +23,7 @@ export const AuthProvider = ({ children }) => {
     setLoading(true);
     try {
       const res = await fetch(
-        `/users?email=${email}&password=${password}&isActive=true`
+        `https://purrchasehub-backend.onrender.com/users?email=${email}&password=${password}&isActive=true`
       );
       const users = await res.json();
 
