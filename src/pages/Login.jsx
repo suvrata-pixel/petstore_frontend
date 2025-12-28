@@ -121,11 +121,11 @@ const Login = () => {
             {" "}and join the family!
           </div>
 
-          <div className="mt-4 p-3 rounded" style={{ background: '#f8f9fa', border: '1px dashed #ddd' }}>
+          {/*<div className="mt-4 p-3 rounded" style={{ background: '#f8f9fa', border: '1px dashed #ddd' }}>
             <p className="mb-1 fw-bold" style={{ color: '#4D805A' }}>Test Accounts:</p>
             <p className="mb-1"><strong>Admin:</strong> <code>admin@petshop.com</code> / <code>adminpass</code></p>
             <p className="mb-0"><strong>User:</strong> <code>user@petshop.com</code> / <code>userpass</code></p>
-          </div>
+          </div>*/}
         </div>
       </div>
     </div>
