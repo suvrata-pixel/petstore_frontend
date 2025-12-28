@@ -15,7 +15,7 @@ const ProductDetails = () => {
   const [quantity, setQuantity] = useState(1);
 
   useEffect(() => {
-    fetch(`http://localhost:4000/products/${id}`)
+    fetch(`https://purrchasehub-backend.onrender.com/products/${id}`)
       .then((res) => res.json())
       .then((data) => {
         if (data.isActive === false) {

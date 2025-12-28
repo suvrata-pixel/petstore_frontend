@@ -28,7 +28,7 @@ const Register = () => {
       }
 
       // 2. Register new user
-      const res = await fetch("http://localhost:4000/users", {
+      const res = await fetch("https://purrchasehub-backend.onrender.com/users", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

@@ -23,8 +23,8 @@ const AdminDashboard = () => {
 
   const fetchData = () => {
     Promise.all([
-      fetch("http://localhost:4000/products").then(r => r.json()),
-      fetch("http://localhost:4000/users").then(r => r.json())
+      fetch("https://purrchasehub-backend.onrender.com/products").then(r => r.json()),
+      fetch("https://purrchasehub-backend.onrender.com/users").then(r => r.json())
     ]).then(([p, u]) => {
       setProducts(p);
       setUsers(u);
@@ -35,8 +35,8 @@ const AdminDashboard = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const url = editingId
-      ? `http://localhost:4000/products/${editingId}`
-      : "http://localhost:4000/products";
+      ? `https://purrchasehub-backend.onrender.com/products/${editingId}`
+      : "https://purrchasehub-backend.onrender.com/products";
 
     const method = editingId ? "PATCH" : "POST";
     const body = editingId
@@ -55,7 +55,7 @@ const AdminDashboard = () => {
   };
 
   const toggleProduct = (id, current) => {
-    fetch(`http://localhost:4000/products/${id}`, {
+    fetch(`https://purrchasehub-backend.onrender.com/products/${id}`, {
       method: "PATCH",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ isActive: !current })
@@ -63,7 +63,7 @@ const AdminDashboard = () => {
   };
 
   const toggleUser = (id, current) => {
-    fetch(`http://localhost:4000/users/${id}`, {
+    fetch(`https://purrchasehub-backend.onrender.com/users/${id}`, {
       method: "PATCH",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ isActive: !current })
