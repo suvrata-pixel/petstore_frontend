@@ -1,4 +1,4 @@
-// src/pages/Products.jsx
+
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
@@ -16,7 +16,7 @@ const Products = () => {
   const { user } = useAuth();
   const { addToCart } = useCart();
 
-  // Fetch products from json-server
+  
   useEffect(() => {
     fetch("https://purrchasehub-backend.onrender.com/products?isActive=true")
       .then((res) => res.json())
@@ -31,7 +31,7 @@ const Products = () => {
       });
   }, []);
 
-  // Search + Filter + Sort
+  
   useEffect(() => {
     let result = [...products];
 
@@ -63,7 +63,7 @@ const Products = () => {
     <div className="container py-5" style={{ paddingTop: "100px" }}>
       <h1 className="section-heading text-center mb-5">Our Products</h1>
 
-      {/* Filters */}
+      
       <div className="row mb-4 g-3">
         <div className="col-md-4">
           <input
@@ -90,7 +90,7 @@ const Products = () => {
         </div>
       </div>
 
-      {/* Product Cards */}
+      
       <div className="row g-4">
         {filtered.length === 0 ? (
           <div className="col-12 text-center py-5">
