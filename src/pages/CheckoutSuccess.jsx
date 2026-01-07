@@ -1,4 +1,4 @@
-// src/pages/CheckoutSuccess.jsx
+
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useCart } from "../context/CartContext";
@@ -6,7 +6,7 @@ import { useCart } from "../context/CartContext";
 const CheckoutSuccess = () => {
   const { clearCart } = useCart();
 
-  // Clear the cart when page loads (just like real payment)
+  
   useEffect(() => {
     clearCart();
   }, [clearCart]);
@@ -16,7 +16,7 @@ const CheckoutSuccess = () => {
       <div className="row justify-content-center">
         <div className="col-md-8 col-lg-6">
           <div className="text-center py-5">
-            {/* Success Icon */}
+            
             <div className="mb-4">
               <i className="bi bi-check-circle-fill text-success" style={{ fontSize: "5rem" }}></i>
             </div>
@@ -31,7 +31,7 @@ const CheckoutSuccess = () => {
               Your order has been confirmed and will be delivered soon.
             </p>
 
-            {/* Buttons */}
+            
             <div className="mt-5">
               <Link to="/products" className="btn custom-btn btn-lg px-5 me-3">
                 Continue Shopping

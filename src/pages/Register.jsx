@@ -1,4 +1,4 @@
-// src/pages/Register.jsx
+
 import React, { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
@@ -17,7 +17,7 @@ const Register = () => {
     setLoading(true);
 
     try {
-      // 1. Check if user already exists
+      
       const checkRes = await fetch(`https://purrchasehub-backend.onrender.com/users?email=${email}`);
       const existing = await checkRes.json();
 
@@ -27,7 +27,7 @@ const Register = () => {
         return;
       }
 
-      // 2. Register new user
+      
       const res = await fetch("https://purrchasehub-backend.onrender.com/users", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -40,7 +40,7 @@ const Register = () => {
       });
 
       if (res.ok) {
-        // Auto login after registration
+        
         const loginResult = await login(email, password);
         if (loginResult.success) {
           navigate("/");
