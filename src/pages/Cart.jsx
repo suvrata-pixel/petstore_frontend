@@ -1,27 +1,25 @@
-// src/pages/Cart.jsx
+
 
 import React from 'react';
-import { useCart } from '../context/CartContext'; // Import our custom hook
-import { Link } from 'react-router-dom'; // For "Continue Shopping" link
+import { useCart } from '../context/CartContext'; 
+import { Link } from 'react-router-dom'; 
 
-// Assuming you'll eventually use the Indian Rupee symbol
+
 const rupeeSymbol = '₹';
 
 const Cart = () => {
-  // Now also pulling the updated clearCart function
+  
   const { cartItems, updateQuantity, removeFromCart } = useCart();
 
-  // Calculate Subtotal (This was already perfect)
+  
   const subtotal = cartItems.reduce((acc, item) => acc + item.price * item.quantity, 0);
 
-  // ---------------------------------------------------------------------------------
-  // 💡 Handlers for quantity changes and removal (Logic was already perfect)
-  // We keep these defined here to keep the rendering logic clean
+  
   const handleQuantityChange = (id, delta) => {
     const itemInCart = cartItems.find(item => item.id === id);
     if (itemInCart) {
       const newQuantity = itemInCart.quantity + delta;
-      // This logic delegates removal to the context if quantity hits 0
+      
       if (newQuantity <= 0) {
         removeFromCart(id);
       } else {
@@ -31,12 +29,12 @@ const Cart = () => {
   };
 
   const handleRemoveItem = (id) => {
-    // ⚠️ IMPORTANT: We should implement a custom confirmation modal here later,
-    // as the project rules forbid the use of browser `alert()` or `confirm()`.
-    // For now, we'll connect it directly.
+    
+    
+    
     removeFromCart(id);
   };
-  // ---------------------------------------------------------------------------------
+  
 
 
   return (
@@ -44,7 +42,7 @@ const Cart = () => {
       <h2 className="section-heading">Your Shopping Cart</h2>
 
       {cartItems.length === 0 ? (
-        // Display if cart is empty
+        
         <div className="text-center p-5 border rounded shadow-sm">
           <p className="lead">Your cart is currently empty. Go find some pawsome stuff!</p>
           <Link to="/products" className="btn custom-btn mt-3">
@@ -52,10 +50,10 @@ const Cart = () => {
           </Link>
         </div>
       ) : (
-        // Display if cart has items
+        
         <>
           <div className="row">
-            {/* Cart Items List */}
+            
             <div className="col-lg-8">
               {cartItems.map(item => (
                 <div key={item.id} className="card mb-3 shadow-sm">
@@ -79,11 +77,9 @@ const Cart = () => {
                             Total: {rupeeSymbol}{(item.price * item.quantity).toFixed(2)}
                           </p>
 
-                          {/* -------------------------------------------------------------- */}
-                          {/* 💡 The FIX: Connecting the Buttons to the Handlers */}
-                          {/* -------------------------------------------------------------- */}
+                          
                           <div className="d-flex align-items-center">
-                            {/* Quantity Decrement Button */}
+                            
                             <button
                               className="btn btn-outline-secondary btn-sm me-2"
                               onClick={() => handleQuantityChange(item.id, -1)}
@@ -96,7 +92,7 @@ const Cart = () => {
                               {item.quantity}
                             </span>
 
-                            {/* Quantity Increment Button */}
+                            
                             <button
                               className="btn btn-outline-secondary btn-sm ms-2"
                               onClick={() => handleQuantityChange(item.id, 1)}
@@ -105,7 +101,7 @@ const Cart = () => {
                               <i className="bi bi-plus"></i>
                             </button>
 
-                            {/* Remove Button */}
+                            
                             <button
                               className="btn btn-danger btn-sm ms-3"
                               onClick={() => handleRemoveItem(item.id)}
@@ -114,7 +110,7 @@ const Cart = () => {
                               <i className="bi bi-trash"></i> Remove
                             </button>
                           </div>
-                          {/* -------------------------------------------------------------- */}
+                          
 
                         </div>
                       </div>
@@ -124,7 +120,7 @@ const Cart = () => {
               ))}
             </div>
 
-            {/* Cart Summary */}
+            
             <div className="col-lg-4">
               <div className="card shadow-sm border-0 sticky-top" style={{ top: '100px' }}>
                 <div className="card-body">
@@ -133,7 +129,7 @@ const Cart = () => {
                     <span>Subtotal:</span>
                     <span className="fw-bold">{rupeeSymbol}{subtotal.toFixed(2)}</span>
                   </div>
-                  {/* You can add shipping/tax/discount lines here later */}
+                  
                   <hr />
                   <div className="d-flex justify-content-between fw-bold mb-3 text-success h5">
                     <span>Total Payable:</span>
