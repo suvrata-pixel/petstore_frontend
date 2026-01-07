@@ -1,4 +1,4 @@
-// src/pages/ProductDetails.jsx
+
 import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { useCart } from "../context/CartContext";
@@ -50,7 +50,7 @@ const ProductDetails = () => {
   return (
     <div className="container py-5" style={{ paddingTop: "100px" }}>
       <div className="row g-5">
-        {/* Image */}
+        
         <div className="col-lg-6">
           <img
             src={product.image || "https://via.placeholder.com/600x600/f8d7da/333?text=No+Image"}
@@ -60,7 +60,7 @@ const ProductDetails = () => {
           />
         </div>
 
-        {/* Details */}
+        
         <div className="col-lg-6">
           <h1 className="display-5 fw-bold mb-3">{product.name}</h1>
           <p className="text-muted fs-4 mb-4">Category: <strong>{product.category}</strong></p>
@@ -70,7 +70,7 @@ const ProductDetails = () => {
             <h2 className="text-success fw-bold">₹{product.price}</h2>
           </div>
 
-          {/* Quantity */}
+          
           <div className="d-flex align-items-center mb-4">
             <button
               className="btn btn-outline-secondary me-3"
@@ -87,7 +87,7 @@ const ProductDetails = () => {
             </button>
           </div>
 
-          {/* Add to Cart Button */}
+          
           <button
             className="custom-btn btn-lg px-5 py-3 w-100"
             onClick={handleAddToCart}

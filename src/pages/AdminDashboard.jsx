@@ -1,4 +1,4 @@
-// src/pages/AdminDashboard.jsx
+
 import React, { useState, useEffect } from "react";
 import { useAuth } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
@@ -11,7 +11,7 @@ const AdminDashboard = () => {
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  // Form states
+  
   const [form, setForm] = useState({
     name: "", price: "", category: "Dog", description: "", image: ""
   });
